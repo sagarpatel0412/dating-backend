@@ -31,8 +31,7 @@ import * as Validation from '@hapi/joi'
       autoLoadModels: true,
       synchronize: false,
     }),
-    UserRolesModule,
-    
+    UserRolesModule
   ],
   controllers: [AppController],
   providers: [AppService],

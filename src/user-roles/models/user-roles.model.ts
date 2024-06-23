@@ -7,7 +7,7 @@ import {
   UpdatedAt,
 } from 'sequelize-typescript';
 
-@Table({ modelName: 'user_roles' })
+@Table({ modelName: 'users_roles' })
 export class UserRolesModel extends Model<UserRolesModel> {
   @Column({
     type: DataType.UUIDV4,
@@ -28,7 +28,7 @@ export class UserRolesModel extends Model<UserRolesModel> {
     type: DataType.STRING,
     allowNull: false,
   })
-  value_info: string;
+  value: string;
 
   @Column({
     type: DataType.STRING,
